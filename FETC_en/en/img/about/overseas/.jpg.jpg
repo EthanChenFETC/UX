@@ -1,0 +1,14 @@
+--2014-01-21 10:30:27--  http://www.fetc.net.tw/portal/file/inline/8ad199dc24383dce0124e5995d1b544b
+Resolving www.fetc.net.tw... 61.61.48.35
+Connecting to www.fetc.net.tw|61.61.48.35|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 252 [text/html]
+Saving to: ‘www.fetc.net.tw/portal/file/inline/8ad199dc24383dce0124e5995d1b544b’
+
+     0K                                                       100% 34.3M=0s
+
+2014-01-21 10:30:27 (34.3 MB/s) - ‘www.fetc.net.tw/portal/file/inline/8ad199dc24383dce0124e5995d1b544b’ saved [252/252]
+
+FINISHED --2014-01-21 10:30:27--
+Total wall clock time: 0.4s
+Downloaded: 1 files, 252 in 0s (34.3 MB/s)

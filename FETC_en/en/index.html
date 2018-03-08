@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+  <title>FETC</title>
+  <meta name='description'>
+  <meta content='width=1008' name='viewport'>
+  <link href='/en/css/main_EN.css' rel='stylesheet'>
+  <script src='/en/js/Analytics.js'></script>  
+  <script src='/en/js/marquee.js'></script>
+  <script src='/en/bower_components/modernizr/modernizr.js'></script>
+   <script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+//check ie version
+    var isIE = function(ver) {
+        var b = document.createElement('b')
+        b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
+        return b.getElementsByTagName('i').length === 1
+    }
+    
+    if (isIE(6)) {
+alert('您的IE版本過舊，請使用IE8.0以上版本或Firefox、Chrome瀏覽')
+window.location.href = 'http://windows.microsoft.com/zh-tw/internet-explorer/download-ie';
+}
+
+				var jsImg = new Array("/en/img/en/BBanner01.jpg","/en/img/en/BBanner02.jpg");
+				var jsHref = new Array("http://www.fetci.com","http://www.fetci.com");
+				
+				var jsImg_len = jsImg.length;  // 圖檔數量
+				var jsHref_len = jsHref.length;
+			
+        // 要用另一個變數存，是不想在 function 中每次都要算陣列的大小
+        var i=0; j=0; 
+	                  //起始照片  2 為 003.jpg
+        //設定每兩秒執行一次sequentialImg() ，此行要在 function 之外
+        setInterval("sequentialImg()",5000);
+        function sequentialImg(){  //循序播放
+            document.getElementById("my_div").innerHTML  = "<a href ='" + jsHref[j] + "' target='_blank' ><img src='"+jsImg[i]+"' width=745 height=275> </a>";        
+                i++;
+                if(i>=jsImg_len)  i=0;
+				j++;
+                if(j>=jsHref_len)  j=0;
+			
+		
+        } 
+
+	
+  </script>
+    
+</head>
+
+<body id='inner' onload=sequentialImg();>
+  <div class='pageShadow' id='left'></div>
+  <div class='pageShadow' id='right'></div>
+  <div class='pageShadow' id='bottom'></div>
+  <div id='wrap'>
+    <div class='clearfix' id='header'></div>
+    <!-- end header -->
+    <div class='clearfix'>
+      <div class='sideNav acc'></div>
+      <!-- end sideNav -->
+    </div>
+    <!-- end headBanner -->
+    <div class='clearfix' id='content'>
+      <div class='clearfix' id='wrapForNavBg'>
+        <div class='acc' id='innerNav'></div>
+        <!-- end innerNav -->
+        <div class='mainContent'>
+		<br>
+          <div id="my_div"></div>
+        
+          	<br>
+          <div class='contentInnerWrap'></div>
+		  
+		  		<div style="text-align:center;">		  
+	<div style="width:180px;height:140px;float:left;color:white;background-color:#666666;border-color:white;border-style:solid;border-width:3px;">ETC Service Brochure
+			<a href='/en/ContactUs/1005ETC Service Brochure.pdf' target="blank" onclick='ga("send", "event", "AD Links", "sbanner1", "");'>
+		<img width="170" height="110" src="/en/img/home/SBanner01.jpg">
+		</a>	
+	</div>
+	<div style="width:180px;height:140px;float:left;color:white;background-color:#666666;border-color:white;border-style:solid;border-width:3px;">Company Intro
+			<iframe width="170" height="110" src="https://www.youtube.com/embed/F0-TwDzeXd0?rel=0" frameborder="0" allowfullscreen="allowfullscreen" onclick='ga("send", "event", "AD Links", "sbanner2", "");'></iframe>	
+	</div>
+	<!--div style="width:180px;height:140px;float:left;color:white;background-color:#666666;border-color:white;border-style:solid;border-width:3px;">Derivative Applications
+			<iframe width="170" height="110" src="https://www.youtube.com/embed/Ggh8vM3am_w?hd=1" frameborder="0" allowfullscreen="allowfullscreen" onclick='ga("send", "event", "AD Links", "sbanner3", "");'></iframe>
+	</div-->
+		<div style="width:180px;height:140px;float:left;color:white;background-color:#666666;border-color:white;border-style:solid;border-width:3px;">eTag Smart City
+			<!--<a href='https://www.fetc.net.tw/ContentFiles_UX/HTMLContent/images/Wciten.html' target="blank" onclick='ga("send", "event", "AD Links", "sbanner3title", "");'></a>-->
+            <iframe width="170" height="110" src="https://www.youtube.com/embed/bQuUU3N2W2k?rel=0" frameborder="0" allowfullscreen="allowfullscreen" onclick='ga("send", "event", "AD Links", "sbanner3", "");'></iframe>
+	</div>
+	<div style="width:180px;height:140px;float:left;color:white;background-color:#666666;border-color:white;border-style:solid;border-width:3px;">Welcome to FETCI !
+			<a href='http://www.fetci.com' target="blank" onclick='ga("send", "event", "AD Links", "sbanner4", "");'>
+		<img width="170" height="110" src="/en/img/home/SBanner04.jpg">
+		</a>	
+	</div>
+
+		</div>	
+        </div>
+      </div>
+    </div>
+    <div id='footer'></div>
+    <!-- end footer -->
+    <!--[if IE 8]>  <![endif]-->
+  </div>
+  <!-- end wrap -->
+  <script src='/en/bower_components/jquery/jquery.min.js'></script>
+  <script src='/en/js/jquery-ui-1.10.3.custom.min.js'></script>
+  <script src='/en/bower_components/handlebars/handlebars.min.js'></script>
+  <script src='/en/js/app_en.js'></script>  
+  <script src='/en/js/define_en.js'></script>
+  <script>
+    window.FETC.Current_SubNav = 'home';
+  </script>
+</body>
+</html>
