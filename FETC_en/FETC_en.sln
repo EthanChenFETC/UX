@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FETC_en", "http://localhost:31714", "{E90B1C05-3BF8-479F-A9BB-9247FFBF5A75}"
 	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_31714"
@@ -25,6 +29,16 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FETC_en", "http://localhost
 	EndProjectSection
 EndProject
 Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.fetc.net.tw:8080/tfs/tfs_defaultcollection
+		SccWebProject0 = true
+		SccProjectUniqueName0 = http://localhost:31714
+		SccLocalPath0 = .
+		SccProjectEnlistmentChoice0 = 2
+		SccLocalPath1 = .
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
